@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "Ecommerce Website (Django Rest APIs)",
+      "createdAt": "Sep 2023",
+      "url": "https://github.com/abbasifaizan70/Ecommerce_django_rest_apis",
+      "description": "🔥 An intuitive and user-friendly e-commerce platform designed to provide a seamless shopping experience. From browsing a diverse range of products to secure online payments, our website ensures a hassle-free process for both sellers and buyers. With features like detailed product descriptions, Cart and integrated payment gateways, shopping has never been more convenient. Whether you're a vendor looking to reach a broader audience or a shopper seeking the latest in fashion, tech, or home goods, ZeeMart caters to all your e-commerce needs.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Django Rest Frame Work",
+          "iconifyClass": "devicon:djangorest"
+        },
+        {
+          "name": "APIs",
+          "iconifyClass": "icon-park:api"
+        },
+        {
+          "name": "Postman",
+          "iconifyClass": "devicon:postman-wordmark"
+        },
+        {
+          "name": "PostgreSQL",
+          "iconifyClass": "devicon:postgresql-wordmark"
+        },
+        {
+          "name": "Swagger",
+          "iconifyClass": "devicon:swagger-wordmark"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "React-Redux Ecommerce Website",
+      "createdAt": "Oct 2023",
+      "url": "https://github.com/abbasifaizan70/Ecommerce_react",
+      "description": "📦 Zeemart is a modern eCommerce website built with React, Redux Toolkit, and ESLint.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "React",
+          "iconifyClass": "skill-icons:react-dark"
+        },
+        {
+          "name": "Redux",
+          "iconifyClass": "skill-icons:redux"
+        },
+        {
+          "name": "Material UI",
+          "iconifyClass": "skill-icons:materialui-light"
+        },
+        {
+          "name": "EsLint",
+          "iconifyClass": "devicon:eslint-wordmark"
+        },
+        {
+          "name": "Bootstrap",
+          "iconifyClass": "devicon:bootstrap-wordmark"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "Recurring Payemnt and Billing App",
+      "createdAt": "Jan 2022",
+      "url": "https://github.com/abbasifaizan70/Billing-Application",
+      "description": "🚀 Recurring Payemnt and Billing App is a ecommerce service platform where customers can subscribe to plans. Each plan contains multiple features.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Ruby",
+          "iconifyClass": "logos:ruby"
+        },
+        {
+          "name": "Ruby on Rails",
+          "iconifyClass": "mdi:language-ruby-on-rails"
+        },
+        {
+          "name": "Postgress",
+          "iconifyClass": "devicon:postgresql-wordmark"
+        },
+        {
+          "name": "Stripe",
+          "iconifyClass": "logos:stripe"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "skill-icons:html"
+        },
+        {
+          "name": "Bootstrap",
+          "iconifyClass": "logos:bootstrap"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOGcPKSQ",
+      "name": "Tic Tac Toe Game",
+      "createdAt": "Apr 2022",
+      "url": "https://github.com/abbasifaizan70/Tic-Tac-Toe-Game",
+      "description": "⚙️ This is a simple implementation of the classic Tic Tac Toe game built using React. It allows two players to take turns marking the spaces in a 3x3 grid. ",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "skill-icons:html"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "skill-icons:react-dark"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "akar-icons:css-fill"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG0_8uQ",
+      "name": "Text Analyzer",
+      "createdAt": "Aug 2023",
+      "url": "https://github.com/abbasifaizan70/text-analyzer",
+      "description": "🌀 This is application to deeply analyze text. When user enters word or sentence it will tell user no of word, sentence, characters and paragraphs.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "skill-icons:react-dark"
+        },
+        {
+          "name": "Typescript",
+          "iconifyClass": "logos:typescript-icon"
+        },
+        {
+          "name": "SCSS",
+          "iconifyClass": "bi:filetype-scss"
+        },
+        {
+          "name": "HTML",
+          "iconifyClass": "akar-icons:html-fill"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOGcPKSQ",
+      "name": "Node.Js Shopping Store",
+      "createdAt": "July 2023",
+      "url": "https://github.com/abbasifaizan70/node-js-shopping-website",
+      "description": "⚙️ Built Shopping store using Node, Express and Postgres SQL, For front-end i used React.js",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Node.Js",
+          "iconifyClass": "la:node"
+        },
+        {
+          "name": "Express.Js",
+          "iconifyClass": "logos:express"
+        },
+        {
+          "name": "PostgreSQL",
+          "iconifyClass": "devicon:postgresql-wordmark"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "skill-icons:react-dark"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOGcPKSQ",
+      "name": "Burger App",
+      "createdAt": "Mar 2022",
+      "url": "https://github.com/abbasifaizan70/Burger-Make-App",
+      "description": "⚙️ This is a Burger Builder application built using React, allowing users to customize and order their own burgers.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "skill-icons:html"
+        },
+        {
+          "name": "Bootstrap",
+          "iconifyClass": "devicon:bootstrap-wordmark"
+        },
+        {
+          "name": "React",
+          "iconifyClass": "skill-icons:react-dark"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "akar-icons:css-fill"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjcyMjI5Njk=",
+      "name": "Furnish",
+      "createdAt": "2021-01-06T06:36:41Z",
+      "url": "https://github.com/abbasifaizan70/Furnish-UI-UX",
+      "description": "🚀  Converted Figma into HTML. Used custom css and media queries for footer & other sections are built using Bootstrap",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "akar-icons:html-fill"
+        },
+        {
+          "name": "Bootstrap",
+          "iconifyClass": "devicon:bootstrap-wordmark"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "akar-icons:css-fill"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "Social App",
+      "createdAt": "Nov 2022",
+      "url": "https://github.com/abbasifaizan70/social-app-react-redux",
+      "description": "📦 This Social Application allows users to create posts with an author, title, and content. It is built using React and Redux, providing a seamless and interactive platform for users to share their thoughts and engage with others.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "React",
+          "iconifyClass": "skill-icons:react-dark"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "akar-icons:css-fill"
+        },
+        {
+          "name": "Redux",
+          "iconifyClass": "skill-icons:redux"
+        },
+        {
+          "name": "Bootstrap",
+          "iconifyClass": "devicon:bootstrap-wordmark"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "JSON Token authentication in Flask",
+      "createdAt": "2021-01-01T08:31:51Z",
+      "url": "https://github.com/abbasifaizan70/RESTFul-API-in-Flask-With-JSON-Web-Token-Authentication-and-Flask-SQLAlchem",
+      "description": "🚀 Built JSON Token authentication in Flack and tested using Postman.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "APIs",
+          "iconifyClass": "icon-park:api"
+        },
+        {
+          "name": "Postman",
+          "iconifyClass": "devicon:postman-wordmark"
+        },
+        {
+          "name": "Flask REST APIs",
+          "iconifyClass": "icon-park:flask"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjcyMjI5Njk=",
+      "name": "Expenses Manage and Analyze App",
+      "createdAt": "Sep 2022",
+      "url": "https://github.com/abbasifaizan70/Furnish-UI-UX",
+      "description": "🚀  This Expenses Management and Analysis application is designed to help users effectively manage their expenses and analyze their spending habits. It provides a comprehensive set of features for tracking, categorizing, and visualizing expenses.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Charts",
+          "iconifyClass": "solar:chart-outline"
+        },
+        {
+          "name": "Bootstrap",
+          "iconifyClass": "devicon:bootstrap-wordmark"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "akar-icons:css-fill"
+        }
+      ]
+    }
+  ]
+}
