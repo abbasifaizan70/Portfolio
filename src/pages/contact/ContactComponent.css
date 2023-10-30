@@ -25,6 +25,7 @@
 }
 
 .blog-heading-div {
+  margin: 30px 0px;
   display: flex;
 }
 
@@ -52,8 +53,7 @@
 }
 
 .blog-heading-img-div {
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .contact-heading-text-div {
@@ -75,7 +75,7 @@
 }
 
 .blog-heading-img-div>* {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -114,6 +114,7 @@
 }
 
 .blog-header-detail-text {
+  padding: 0px 20px;
   font-size: 20px;
   line-height: 30px;
   margin-top: 0px;
