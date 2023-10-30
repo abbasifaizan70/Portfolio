@@ -1,7 +1,8 @@
 .blog-card-div {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 30px 1px;
   border-radius: 10px;
-  margin: 2rem 0rem 3rem;
+  /* flex: 1 1 40%; */
+  margin: 3rem 0rem 3rem;
   overflow: hidden;
   padding: 2rem;
   position: relative;
@@ -23,7 +24,6 @@
 }
 
 .blog-card-title {
-  white-space: nowrap;
   text-overflow: ellipsis;
   font-family: "Google Sans Regular";
   margin-bottom: 0.75rem;
@@ -63,8 +63,8 @@
   position: absolute;
   top: 30;
   left: 0;
-  width: 500%;
-  height: 1000%;
+  /* width: 500%;
+  height: 1000%; */
   background: #343345;
   z-index: -1;
   transform-origin: 0% 0%;
@@ -91,6 +91,6 @@
     margin-top: 10px;
   }
   .blog-card-div {
-    margin: 3rem 0 1rem;
+    margin: 1rem 1rem;
   }
 }
