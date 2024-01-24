@@ -24,7 +24,7 @@ const greeting = {
   logo_name: "Faizan Abbasi",
   // nickname: "Faizan",
   subTitle:
-    "Crafting Dynamic Web  Experiences with React, ROR, and Django 💻",
+    "Crafting Dynamic Web Experiences with React, Next, Django and ROR 💻",
   resumeLink:
     "https://drive.google.com/file/d/15RZV1a5hjPLRtWmdcs1IaD00QnNIe6uM/view",
   // portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
@@ -136,8 +136,8 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Expertise in building engaging user interfaces using React-Redux.",
-        "⚡ Proficient in developing robust back-end systems with Ruby on Rails (ROR), Node and Django.",
+        "⚡ Expertise in building engaging user interfaces using React-Redux, NextJs.",
+        "⚡ Proficient in developing robust back-end systems with Django, Node and ROR.",
         "⚡ Skilled in integrating diverse technologies to create seamless web experiences.",
         "⚡ Experience in creating responsive and dynamic web applications for diverse client needs.",
         "⚡ Adept at utilizing RESTful APIs and other integration techniques for data management.",
@@ -221,10 +221,12 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Proficient in managing cloud storage solutions using AWS S3, ensuring secure and scalable data storage capabilities."
+        ,"⚡ Experienced in container management and deployment using AWS Elastic Container Registry (ECR) and EC2 instances for optimal resource utilization."
+        ,"⚡ Skilled in automating and streamlining CI/CD pipelines with GitHub Actions, enhancing efficiency in software development processes."
+        ,"⚡ Advanced proficiency in using Jenkins for continuous integration, supporting the development lifecycle with automated build and testing."
+        ,"⚡ Hands-on experience in orchestrating containerized applications with Kubernetes, facilitating high availability and scalability in production environments."
+        ,"⚡ Implemented infrastructure as code using Terraform, enabling consistent and reliable environment provisioning across cloud platforms."
       ],
       softwareSkills: [
         {
@@ -561,7 +563,7 @@ const experience = {
           duration: "Nov 2021 - Present",
           location: "Devsinc, Islamabad",
           description:
-          `-	Responsible for developing full-stack solutions in React, Ruby on Rails, Django and AWS ecosystem.\n-	Construct robust REST APIs, Integrated Third-Party APIs and harnessed popular gems/packages to expand application features.\n-	Communicating with clients for scrum support and building high scaled projects.\n-	Worked collaboratively with QAs, development, and business groups to complete comprehensive testing on major software release.\n-	Consistently recognized for excellent problem solving and analytical skills by stakeholders.\n-	Use Git, Bitbucket and other version control systems for managing codebase.\n-	Using RSpec, RTL, and Jest wrote automated tests.`,
+          `-	Accomplished Full Stack Developer with expertise in React, Next.js, and Redux, proficiently building dynamic and responsive front-end interfaces using Tailwind, Bootstrap, and CSS.\n-	Extensive backend development experience using Django and Ruby on Rails, with a portfolio encompassing over five successful projects developed for client demos and five projects for U.S. clients.\n-	Demonstrated proficiency in integrating third-party services, such as Google Authentication, Stripe, LinkedIn, Google Maps, and more, enhancing the functionality of web applications.\n-	Proven track record of effective project management using industry-standard tools like Trello and Jira, ensuring seamless collaboration.\n-	Hands-on experience with Material UI and various component libraries, contributing to the creation of visually appealing and user-friendly web applications.\n-	Established proficiency in code review processes, maintaining high-quality standards, and utilizing GitHub for version control and collaborative development.\n-	Successfully led and managed a team of five developers, fostering a collaborative environment and ensuring the timely delivery of high-quality software projects.\n-	Seasoned in handling complex challenges, such as signing with Google and implementing intricate functionalities, showcasing problem-solving skills in a dynamic development environment.\n-	Proficient in DevOps practices, including AWS (Amazon Web Services), Dockerization of applications, Jenkins for automation, and CI/CD (Continuous Integration and Continuous Deployment) pipelines.\n-	Utilized GitHub Actions for streamlined deployment and version control, ensuring efficient development workflows.\n-	Consistent use of industry best practices and tools, with a commitment to staying abreast of emerging technologies, ensuring the delivery of cutting-edge solutions to clients.`,
           color: "#0879bf",
         },
         {
