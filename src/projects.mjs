@@ -53,8 +53,8 @@ export const projects = [
     overview:'I contribute fixes to Expensify’s open-source application through its engineering review process. One example is pull request #99605, merged in September 2026.',
     problem:'Concierge chat history and task visibility interacted in ways that could hide useful controls or messages. The fix needed to respect several different chat states and preserve existing behavior.',
     contributions:['Fixed the missing Show history control in the native Concierge chat flow.','Refined visibility behavior so still-open tasks remain accessible.','Addressed message visibility around server timestamp updates.','Added regression coverage and iterated through public code review.'],
-    scope:'A contribution to Expensify’s application UI and state handling. The linked pull request documents my changes and review history.',
-    links:[{label:'Read merged PR #99605',href:'https://github.com/Expensify/App/pull/99605'},{label:'Visit Expensify',href:'https://www.expensify.com/'}]
+    scope:'A contribution to Expensify’s application UI and state handling. Explore the linked pull requests for changes and review history.',
+    links:[{label:'View my pull requests',href:'https://github.com/Expensify/App/pulls?q=is%3Apr+state%3Aclosed+assignee%3Aabbasifaizan70'},{label:'Visit Expensify',href:'https://www.expensify.com/'}]
   },
   {
     id:'boon', number:'05', name:'Boon', domain:'Referral hiring', category:'platform',
