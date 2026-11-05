@@ -56,3 +56,5 @@ Fonts: DM Sans and Space Grotesk (SIL Open Font License; notices included beside
 ## Developer motion
 
 The homepage includes an animated technology strip, a portrait network, a larger portrait with smooth mouse-follow tilt, layered skill badges and reactive lighting, card highlights, and a code playground with React/Rails/SQL examples, keyboard-accessible tabs, replay, and copy. Code examples are illustrative and do not make backend requests. The portrait also supports arrow-key tilt and Escape to reset when focused. The Motion toggle and system reduced-motion preference stop decorative animation; the canvas also stops when it is offscreen or the page is hidden. Instagram is excluded at the owner's request.
+
+To enable direct WhatsApp contact, set `WHATSAPP_NUMBER` in Vercel to the confirmed international number (including country code) and redeploy. Until configured, the portfolio keeps its working email contact. The header, contact section, and project discussion links switch to WhatsApp together.
