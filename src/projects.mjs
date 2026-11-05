@@ -46,15 +46,46 @@ export const projects = [
   },
   {
     id:'expensify', number:'04', name:'Expensify', domain:'Open-source product engineering', category:'open-source',
-    title:'Small details. A real difference in production.',
-    description:'React Native and TypeScript contributions, with public pull requests and regression tests.',
-    role:'Open-source contributor', type:'Merged contribution',
-    stack:['React Native','TypeScript','State management','Regression testing'],
-    overview:'I contribute fixes to Expensify’s open-source application through its engineering review process. One example is pull request #99605, merged in September 2026.',
-    problem:'Concierge chat history and task visibility interacted in ways that could hide useful controls or messages. The fix needed to respect several different chat states and preserve existing behavior.',
-    contributions:['Fixed the missing Show history control in the native Concierge chat flow.','Refined visibility behavior so still-open tasks remain accessible.','Addressed message visibility around server timestamp updates.','Added regression coverage and iterated through public code review.'],
-    scope:'A contribution to Expensify’s application UI and state handling. Explore the linked pull requests for changes and review history.',
-    links:[{label:'View my pull requests',href:'https://github.com/Expensify/App/pulls?q=is%3Apr+state%3Aclosed+assignee%3Aabbasifaizan70'},{label:'Visit Expensify',href:'https://www.expensify.com/'}]
+    title:'From interactive charts to reliable everyday workflows.',
+    description:'Interactive charts, faster search, accessible navigation, and dependable expense and chat workflows.',
+    role:'Open-source contributor', type:'Merged contributions',
+    stack:['React Native','TypeScript','Onyx state management','Accessibility','Regression testing'],
+    overview:'I have authored 53 merged pull requests for Expensify’s open-source app, from November 2025 to November 2026. My contributions range from new reporting and chart features to performance, accessibility, offline reliability, and shared UI improvements. The examples below highlight 14 merged PRs; this record was checked on 6 November 2026.',
+    problem:'An expense and collaboration app needs to stay responsive while handling large report lists, offline changes, keyboard navigation, and nested screens. My work makes those everyday flows easier to use and more consistent across web and mobile.',
+    contributions:[
+      {
+        title:'Interactive charts',
+        text:'Added full-screen chart expansion, then improved rendering at larger sizes and added pinch, double-tap zoom, and pan. The follow-up included unit tests for chart scaling.',
+        prs:[95249,97698]
+      },
+      {
+        title:'Search and loading performance',
+        text:'Reduced repeated autocomplete work through debouncing, memoization, and more efficient matching. Also migrated selected icons and illustrations to lazy loading to reduce the startup bundle.',
+        prs:[86925,75330]
+      },
+      {
+        title:'Chat and offline reliability',
+        text:'Fixed read-state synchronization after reconnecting, restored native Concierge history controls while keeping pending tasks visible, and stopped attachment and chart interactions from closing the side panel.',
+        prs:[94738,99605,102937]
+      },
+      {
+        title:'Accessible navigation',
+        text:'Added heading semantics for screen readers and corrected nested focus traps so keyboard users can reach the Back button and tabs in the manual expense flow.',
+        prs:[80538,99114]
+      },
+      {
+        title:'Expenses, reporting, and payment feedback',
+        text:'Added the Top Spenders default report, placed the bank-account filter with withdrawal filters for reconciliation, and surfaced the actual bank return reason when a report payment fails.',
+        prs:[78410,104042,84823]
+      },
+      {
+        title:'Shared UI and dependable tests',
+        text:'Refactored confirmation dialogs across report and room-management screens to use a shared hook, and fixed a hanging report-creation test by initializing its required parent-report state.',
+        prs:[77948,76377]
+      }
+    ],
+    scope:'53 authored PRs confirmed merged as of 6 November 2026. Each example links to its public code and review history. Closed, unmerged PRs are excluded from this count.',
+    links:[{label:'View my pull requests',href:'https://github.com/Expensify/App/pulls?q=is%3Apr+state%3Aclosed+assignee%3Aabbasifaizan70'},{label:'View merged PRs',href:'https://github.com/Expensify/App/pulls?q=is%3Apr+is%3Amerged+assignee%3Aabbasifaizan70'},{label:'Visit Expensify',href:'https://www.expensify.com/'}]
   },
   {
     id:'boon', number:'05', name:'Boon', domain:'Referral hiring', category:'platform',
