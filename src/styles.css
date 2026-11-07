@@ -98,3 +98,13 @@ dialog{padding:50px;width:min(760px,calc(100% - 40px));max-height:90svh;border:1
 
 /* Short, visible role and contribution summaries for client projects. */
 .project-role-summary{display:flex;flex-direction:column;gap:4px;margin:17px 0 14px;padding:11px 13px;background:var(--surface);border:1px solid var(--line);border-radius:8px}.project-role-summary>span{font-size:11px;line-height:1.5;letter-spacing:.7px;color:var(--muted)}.project-role-summary>strong{font-size:14px;line-height:1.5;color:var(--text);font-weight:600}.project-contributions{padding:0 0 0 17px;margin:0 0 17px;color:var(--muted);font-size:13px;line-height:1.7}.project-contributions li+li{margin-top:5px}.project-contributions li::marker{color:var(--blue)}.has-role-summary .project-card-footer{justify-content:flex-end}
+
+/* Keep direct contact visible throughout the portfolio. */
+.has-whatsapp{padding-bottom:96px}
+.whatsapp-floating{position:fixed;right:max(24px,env(safe-area-inset-right));bottom:max(24px,env(safe-area-inset-bottom));z-index:45;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 19px;border:1px solid #ffffff45;border-radius:999px;background:#147d4b;color:#fff;font-size:14px;font-weight:600;line-height:1.5;box-shadow:0 6px 24px #073e292b;transition:background .2s,transform .2s}
+.whatsapp-floating svg{width:24px;height:24px;flex-shrink:0}
+.whatsapp-floating:hover{background:#10643c;transform:translateY(-2px)}
+.whatsapp-floating:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-radius:999px}
+.has-whatsapp .nav-contact{white-space:nowrap;align-items:center;min-height:44px}
+@media(max-width:650px){.whatsapp-floating{right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));min-height:48px;padding:10px 16px;font-size:13px}.has-whatsapp .toast{bottom:86px}}
+@media(max-width:360px){.has-whatsapp .nav-contact{display:flex;padding-inline:10px;gap:8px}.has-whatsapp .nav-wrap{gap:12px}.has-whatsapp .nav-wrap .brand-light{display:none}}
