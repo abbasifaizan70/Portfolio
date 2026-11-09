@@ -95,7 +95,33 @@ export const projects = [
     links:[{label:'My merged contributions',href:'https://github.com/Expensify/App/pulls?q=is%3Apr+is%3Amerged+author%3Aabbasifaizan70'},{label:'View my pull requests',href:'https://github.com/Expensify/App/pulls?q=is%3Apr+state%3Aclosed+assignee%3Aabbasifaizan70'},{label:'View merged PRs',href:'https://github.com/Expensify/App/pulls?q=is%3Apr+is%3Amerged+assignee%3Aabbasifaizan70'},{label:'Visit Expensify',href:'https://www.expensify.com/'}]
   },
   {
-    id:'boon', number:'05', name:'Boon', domain:'Referral hiring', category:'platform',
+    id:'aio', number:'05', name:'AIO', domain:'Restaurant operations', category:'platform',
+    title:'Connected tools for restaurant teams.',
+    description:'Full Stack Engineer building React interfaces and NestJS APIs, with responsibility for a team of three.',
+    role:'Full Stack Engineer', type:'Client product',
+    cardContributions:['React interfaces & NestJS APIs','React Query & Nx monorepo','Led a team of three'],
+    stack:['React','NestJS','PostgreSQL','React Query','Nx','Material UI'],
+    overview:'I worked across the frontend and backend of AIO’s restaurant platform, coordinating delivery with stakeholders and a three-member team.',
+    problem:'Connected business workflows needed consistent interfaces, dependable APIs, and clear implementation priorities.',
+    contributions:['Built React interfaces and NestJS APIs.','Managed state with React Query and Context API.','Worked in an Nx monorepo with shared development workflows.','Led a three-member team and translated stakeholder requirements into sprint tasks.'],
+    scope:'Full-stack engineering and team leadership contributions, April–August 2024.',
+    links:[{label:'Visit AIO',href:'https://www.aioapp.com/'}]
+  },
+  {
+    id:'contour', number:'06', name:'Contour Software', domain:'Transport booking & scheduling', category:'platform',
+    title:'Flexible interfaces for complex transport workflows.',
+    description:'Software Developer building configurable screens, advanced search, and faster React interfaces for transport operations.',
+    role:'Software Developer', type:'Employer project',
+    cardContributions:['Metadata-driven React screens','Advanced search & tab state','Performance & reusable components'],
+    stack:['React','Fluent UI 2','Redux','JavaScript'],
+    overview:'At Contour, I developed a transport booking and scheduling platform with React, Fluent UI 2, and Redux.',
+    problem:'Complex screens needed to adapt to backend configuration while preserving user context and staying responsive.',
+    contributions:['Built configurable forms, filters, and tabbed layouts.','Implemented asynchronous search and per-tab state persistence.','Improved performance through caching and selective rendering.','Contributed reusable components, runtime theming, and peer mentoring.'],
+    scope:'Software development contributions, September 2024–December 2025. The link opens my employer’s public website.',
+    links:[{label:'Visit Contour',href:'https://contour-software.com/'}]
+  },
+  {
+    id:'boon', number:'07', name:'Boon', domain:'Referral hiring', category:'platform',
     title:'Connecting people. Simplifying referrals.',
     description:'A connected hiring experience with authentication, integrations, and reliable background work.',
     role:'Full-stack development & integrations', type:'Client product',
@@ -107,7 +133,7 @@ export const projects = [
     links:[{label:'Visit Boon',href:'https://www.goboon.co/'}]
   },
   {
-    id:'voxa', number:'06', name:'Voxa', domain:'Voice AI exploration', category:'ai',
+    id:'voxa', number:'08', name:'Voxa', domain:'Voice AI exploration', category:'ai',
     title:'From a spoken thought to a spoken answer.',
     description:'A turn-based voice assistant with transcription, LLM responses, and speech playback.',
     role:'Personal project', type:'AI lab',
@@ -119,7 +145,7 @@ export const projects = [
     links:[{label:'Explore the source',href:'https://github.com/abbasifaizan70/voxa-voice-agent'}]
   },
   {
-    id:'agents', number:'07', name:'Agent systems lab', domain:'Retrieval & tool orchestration', category:'ai',
+    id:'agents', number:'09', name:'Agent systems lab', domain:'Retrieval & tool orchestration', category:'ai',
     title:'Teaching tools to work together.',
     description:'A LangGraph and Weaviate exploration of tool routing and structured agent responses.',
     role:'Technical assessment project', type:'AI lab',

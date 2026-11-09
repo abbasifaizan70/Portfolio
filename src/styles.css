@@ -93,6 +93,8 @@ dialog{padding:50px;width:min(760px,calc(100% - 40px));max-height:90svh;border:1
 
 .case-copy .contribution-list{list-style:none;padding:0;margin:18px 0}.case-copy .contribution-detail{padding:20px 0;margin:0;border-top:1px solid var(--line)}.contribution-detail>strong{display:block;font-size:15px;color:var(--text);line-height:1.5}.case-copy .contribution-detail>p{margin:8px 0 12px}.contribution-prs{display:flex;flex-wrap:wrap;gap:8px}.contribution-prs a{display:inline-flex;align-items:center;gap:9px;min-height:36px;padding:5px 10px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--blue);font-size:11px;font-weight:600;line-height:1.5}.contribution-prs a:hover{border-color:var(--blue);text-decoration:underline;text-underline-offset:3px}
 
+.mark-aio{background:#fce7dc;color:#8b3c21}.mark-contour{background:#dcecf8;color:#215779}
+
 /* Contribution highlights: visible on the project card and in its case study. */
 .project-highlights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:4px 0 22px;padding:16px 0;border-block:1px solid var(--line)}.project-highlights>div{display:flex;flex-direction:column-reverse;gap:4px;min-width:0}.project-highlights dt{font-size:12px;line-height:1.5;color:var(--muted)}.project-highlights dd{margin:0;font:600 32px/1.1 var(--display);letter-spacing:-1px;color:var(--blue)}
 

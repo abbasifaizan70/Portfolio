@@ -11,7 +11,7 @@ const errors=[]; page.on('pageerror',e=>errors.push(e.message));
 const failed=[];page.on('response',r=>{if(r.url().startsWith(base)&&r.status()>=400)failed.push([r.status(),r.url()]);});
 await page.goto(base,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);
 assert.equal(await page.locator('h1').count(),1);
-assert.equal(await page.locator('.project-card').count(),7);
+assert.equal(await page.locator('.project-card').count(),9);
 const checks=[];
 const portrait=page.locator('.portrait-stage');const photo=page.locator('.portrait-stage .portrait');const box=await portrait.boundingBox();
 const initialTransform=await photo.evaluate(el=>getComputedStyle(el).transform);
@@ -22,12 +22,12 @@ await page.mouse.move(5,5);await page.waitForTimeout(700);assert.equal(await por
 await portrait.focus();await page.keyboard.press('ArrowRight');await page.waitForTimeout(350);assert.ok(parseFloat(await portrait.evaluate(el=>el.style.getPropertyValue('--portrait-y')))>1);await page.keyboard.press('Escape');await page.waitForTimeout(700);assert.ok(Math.abs(parseFloat(await portrait.evaluate(el=>el.style.getPropertyValue('--portrait-y'))))<.1);await page.locator('.brand').first().focus();
 checks.push('Larger portrait responds to pointer and keyboard, layers move, and tilt resets');
 
-for(const [filter,count]of [['ai',2],['platform',4],['open-source',1],['all',7]]){await page.locator(`[data-filter="${filter}"]`).click();assert.equal(await page.locator('.project-card:visible').count(),count);assert.equal(await page.locator(`[data-filter="${filter}"]`).getAttribute('aria-pressed'),'true');}
+for(const [filter,count]of [['ai',2],['platform',6],['open-source',1],['all',9]]){await page.locator(`[data-filter="${filter}"]`).click();assert.equal(await page.locator('.project-card:visible').count(),count);assert.equal(await page.locator(`[data-filter="${filter}"]`).getAttribute('aria-pressed'),'true');}
 checks.push('Project filters: all, product platforms, open source, AI lab');
-for(const id of ['solo','carli','house','expensify','boon','voxa','agents']){
-  await page.locator(`[data-project="${id}"]`).click();await page.locator('#project-dialog[open]').waitFor();assert.ok((await page.locator('#dialog-title').innerText()).length>3);assert.equal(await page.locator('#dialog-content .case-copy li').count(),id==='expensify'?6:4);await page.keyboard.press('Escape');assert.equal(await page.locator('#project-dialog[open]').count(),0);assert.equal(await page.locator(`[data-project="${id}"]`).evaluate(el=>el===document.activeElement),true);
+for(const id of ['solo','carli','house','expensify','aio','contour','boon','voxa','agents']){
+  await page.locator(`[data-project="${id}"]`).click();await page.locator('#project-dialog[open]').waitFor();assert.ok((await page.locator('#dialog-title').innerText()).trim().length>0);assert.equal(await page.locator('#dialog-content .case-copy li').count(),id==='expensify'?6:4);await page.keyboard.press('Escape');assert.equal(await page.locator('#project-dialog[open]').count(),0);assert.equal(await page.locator(`[data-project="${id}"]`).evaluate(el=>el===document.activeElement),true);
 }
-checks.push('All 7 project dialogs, content, Escape, and focus restoration');
+checks.push('All 9 project dialogs, content, Escape, and focus restoration');
 await page.locator('[data-project="solo"]').click();await page.locator('#project-dialog[open]').waitFor();await page.locator('.dialog-close').click();assert.equal(await page.locator('#project-dialog[open]').count(),0);
 await page.locator('[data-project="solo"]').click();await page.locator('#project-dialog[open]').waitFor();await page.mouse.click(5,5);assert.equal(await page.locator('#project-dialog[open]').count(),0);
 await page.locator('.copy-email').click();await page.waitForFunction(()=>document.querySelector('.toast').textContent.includes('copied'));assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),'abbasi.faizan1997@gmail.com');checks.push('Email copy action');
@@ -60,7 +60,7 @@ await page.setViewportSize({width:390,height:844});await page.goto(base);await p
 await page.locator('[data-project="expensify"]').click();await page.locator('#project-dialog[open]').waitFor();await page.locator('#project-dialog').evaluate(el=>Promise.all(el.getAnimations().map(a=>a.finished)));const modalAudit=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();a11y.push({viewport:'mobile-modal',violations:modalAudit.violations.map(v=>({id:v.id,impact:v.impact,help:v.help,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))}))});await page.keyboard.press('Escape');
 await page.locator('.theme-toggle').click();await page.locator('.code-tabs').evaluate(el=>Promise.all(el.getAnimations({subtree:true}).map(a=>a.finished)));const darkAudit=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();a11y.push({viewport:'dark-mobile',violations:darkAudit.violations.map(v=>({id:v.id,impact:v.impact,help:v.help,nodes:v.nodes.map(n=>({target:n.target,summary:n.failureSummary}))}))});await page.locator('.theme-toggle').click();
 const nojs=await browser.newContext({javaScriptEnabled:false,viewport:{width:1280,height:900}});const plain=await nojs.newPage();await plain.goto(base);await plain.locator('[data-project="solo"]').click();await plain.waitForURL('**/work/solo.html');assert.equal(await plain.locator('h1').innerText(),'Solo / SoloSuit');checks.push('No-JavaScript project navigation and static case study');
-for(const id of ['carli','house','expensify','boon','voxa','agents']){const response=await plain.goto(`${base}/work/${id}.html`);assert.equal(response.status(),200);assert.equal(await plain.locator('h1').count(),1);}
+for(const id of ['carli','house','expensify','aio','contour','boon','voxa','agents']){const response=await plain.goto(`${base}/work/${id}.html`);assert.equal(response.status(),200);assert.equal(await plain.locator('h1').count(),1);}
 const reduce=await browser.newContext({reducedMotion:'reduce',viewport:{width:390,height:844}});const rp=await reduce.newPage();await rp.goto(base);assert.equal(await rp.locator('html').evaluate(e=>e.classList.contains('motion-paused')),true);checks.push('System reduced-motion preference respected');
 await writeFile('artifacts/accessibility.json',JSON.stringify(a11y,null,2));await writeFile('artifacts/test-results.json',JSON.stringify({checks,errors,failed,a11y},null,2));
 console.log(JSON.stringify({checks,errors,failed,accessibility:a11y.map(a=>({viewport:a.viewport,violations:a.violations.map(v=>({id:v.id,count:v.nodes.length}))}))},null,2));

@@ -17,9 +17,9 @@ try {
       assert.equal(response.headers.get('location'),`/#${section}`);
     }
   }
-  for(const path of ['/','/work/solo.html','/work/carli.html','/work/house.html','/work/expensify.html','/work/boon.html','/work/voxa.html','/work/agents.html','/assets/social-card.png','/sitemap.xml','/robots.txt']){
+  for(const path of ['/','/work/solo.html','/work/carli.html','/work/house.html','/work/expensify.html','/work/aio.html','/work/contour.html','/work/boon.html','/work/voxa.html','/work/agents.html','/assets/social-card.png','/sitemap.xml','/robots.txt']){
     const response=await fetch(base+path);assert.equal(response.status,200,path);
   }
   const missing=await fetch(base+'/missing-page');assert.equal(missing.status,404);assert.match(await missing.text(),/Back to my portfolio/);
-  console.log('Hosting checks passed: 12 legacy redirects, 8 content pages, share image, sitemap, robots, and helpful 404.');
+  console.log('Hosting checks passed: 12 legacy redirects, 10 content pages, share image, sitemap, robots, and helpful 404.');
 }finally{server.kill();}
