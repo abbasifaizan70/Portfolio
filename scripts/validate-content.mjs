@@ -19,4 +19,4 @@ for(const url of [profile.resume,profile.github,profile.linkedin,profile.upwork,
 for(const s of skills)for(const t of s.tools)assert.ok(text.includes(t),`Missing skill: ${t}`);
 for(const label of ['Silver Medalist','3.94 / 4','Deep Learning','Andrew Ng','cricket','2014 — 2016','2017 — 2021'])assert.ok(text.includes(label),`Missing original background detail: ${label}`);
 for(const forbidden of ['Muffito','FreeCopy','Delhivery','Kanodar','Gujarat','Nov 2021 – Present','__PROJECTS__','__INSTAGRAM__'])assert.ok(!html.includes(forbidden),`Stale or template content: ${forbidden}`);
-console.log('Content parity checked: 13 original projects, 7 recent projects, all 5 historical roles, 3 education entries, certificate, 4 articles, skills, resume, and contact links. Instagram excluded at the owner’s request.');
+console.log(`Content parity checked: 13 original projects, 7 recent projects, all ${experience.length} experience entries, 3 education entries, certificate, 4 articles, skills, resume, and contact links. Instagram excluded at the owner’s request.`);
